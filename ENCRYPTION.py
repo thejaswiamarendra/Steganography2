@@ -41,7 +41,7 @@ for i in range(text_length):
     y=random.randint(0,height)
     RGB=image1.getpixel((x,y))
     rgb_mutable=list(RGB)
-    print(rgb_mutable)
+    
     rgb_mutable[z]=chr_ascii[text[p]]^chr_ascii[password[j]]
     rgb_tuple=tuple(rgb_mutable)
     image1.putpixel((x,y),rgb_tuple)
